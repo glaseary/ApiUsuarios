@@ -1,11 +1,13 @@
 package com.Perfulandia.ApiUsuarios.dto;
 
+import org.springframework.hateoas.RepresentationModel;
+
 import lombok.*;
 
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class UsuarioDTO {
+public class UsuarioDTO extends RepresentationModel <UsuarioDTO> {
     private Integer idUsuario;
     private String nombreUsuario;
     private String email;
